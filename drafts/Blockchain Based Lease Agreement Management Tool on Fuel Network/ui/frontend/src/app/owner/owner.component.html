@@ -1,0 +1,9 @@
+<div class="box-container">
+  <div class="light-gray-box">
+    <h1>Hi Owner!</h1>
+    <button *ngIf="isConnected" mat-button (click)="openDialog()">Add a Lease</button>
+    <div class="container">
+      <button *ngIf="!isConnected" class="connect-wallet-button" (click)="connectWallet()">Connect Wallet</button>
+    </div>
+  </div>
+</div>
